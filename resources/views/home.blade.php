@@ -30,6 +30,23 @@
         </div>
     </div>
 
+    <!-- Video Introductorio -->
+    <div class="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-700 rounded-3xl p-6 md:p-8 mb-8 shadow-2xl">
+        <h2 class="text-2xl font-bold text-white mb-4 text-center">
+            <i class="fas fa-video mr-2"></i>Introducción a las Topologías de Red
+        </h2>
+        <div class="relative w-full" style="padding-bottom: 56.25%;">
+            <iframe 
+                class="absolute top-0 left-0 w-full h-full rounded-xl"
+                src="https://www.youtube.com/embed/BI_AcCJpWeY" 
+                title="Video de Topologías de Red" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
     <!-- Stats Cards -->
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
         <div class="bg-white rounded-2xl p-6 shadow-lg card-hover animate-slide-up" style="animation-delay: 0.1s">
