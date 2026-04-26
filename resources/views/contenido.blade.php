@@ -147,6 +147,11 @@
                 </div>
             </div>
         </div>
+
+        <div class="mt-8 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-700 rounded-2xl p-6 text-white">
+            <h3 class="text-lg font-bold text-white mb-4 text-center">Representación Visual de las Topologías</h3>
+            <img src="{{ asset('images/topologias-de-red-1.jpg') }}" alt="Diagrama de topologías de red" class="w-full h-auto rounded-lg border-4 border-white/30">
+        </div>
     </section>
 
     <!-- Cuadro Comparativo -->
@@ -238,9 +243,13 @@
     </section>
 
     <!-- CTA -->
-    <div class="text-center">
+    <div class="text-center space-y-4">
         <a href="{{ route('actividad') }}" class="btn-primary inline-flex items-center bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-xl font-bold hover:from-blue-700 hover:to-indigo-700 shadow-lg">
             <i class="fas fa-pencil-alt mr-2"></i>Ir a la Actividad
+        </a>
+        <br>
+        <a href="{{ route('practica') }}" class="btn-primary inline-flex items-center bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-4 rounded-xl font-bold hover:from-green-700 hover:to-emerald-700 shadow-lg">
+            <i class="fas fa-laptop-code mr-2"></i>Ir a la Práctica
         </a>
     </div>
 </div>

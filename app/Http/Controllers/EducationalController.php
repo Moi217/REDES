@@ -91,4 +91,9 @@ class EducationalController extends Controller
         
         return view('resultados', compact('puntuacion', 'total', 'nombre', 'todosResultados', 'respuestas'));
     }
+
+    public function practica()
+    {
+        return view('practica');
+    }
 }

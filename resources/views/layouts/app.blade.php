@@ -125,6 +125,16 @@
                     @endif
                 </a>
 
+                <a href="{{ route('practica') }}" class="sidebar-link flex items-center px-4 py-3 rounded-xl {{ request()->routeIs('practica*') ? 'bg-gradient-to-r from-green-500 to-emerald-600 text-white shadow-lg' : 'text-slate-300 hover:bg-slate-800/50' }}">
+                    <div class="w-10 h-10 rounded-lg flex items-center justify-center {{ request()->routeIs('practica*') ? 'bg-white/20' : 'bg-slate-700/50' }}">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <span class="ml-3 font-medium">Práctica</span>
+                    @if(request()->routeIs('practica*'))
+                        <span class="ml-auto w-2 h-2 bg-white rounded-full animate-pulse"></span>
+                    @endif
+                </a>
+
                 <a href="{{ route('resultados') }}" class="sidebar-link flex items-center px-4 py-3 rounded-xl {{ request()->routeIs('resultados') ? 'bg-gradient-to-r from-blue-500 to-indigo-600 text-white shadow-lg' : 'text-slate-300 hover:bg-slate-800/50' }}">
                     <div class="w-10 h-10 rounded-lg flex items-center justify-center {{ request()->routeIs('resultados') ? 'bg-white/20' : 'bg-slate-700/50' }}">
                         <i class="fas fa-chart-line"></i>
@@ -175,6 +185,10 @@
                     <a href="{{ route('actividad') }}" class="flex items-center px-4 py-3 rounded-xl text-slate-700 hover:bg-blue-50 transition">
                         <i class="fas fa-pencil-alt w-6"></i>
                         <span class="ml-3">Actividad</span>
+                    </a>
+                    <a href="{{ route('practica') }}" class="flex items-center px-4 py-3 rounded-xl text-slate-700 hover:bg-blue-50 transition">
+                        <i class="fas fa-laptop-code w-6"></i>
+                        <span class="ml-3">Práctica</span>
                     </a>
                     <a href="{{ route('resultados') }}" class="flex items-center px-4 py-3 rounded-xl text-slate-700 hover:bg-blue-50 transition">
                         <i class="fas fa-chart-line w-6"></i>

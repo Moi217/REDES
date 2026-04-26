@@ -9,3 +9,4 @@ Route::get('/actividad/iniciar', [EducationalController::class, 'iniciarActivida
 Route::get('/actividad', [EducationalController::class, 'actividad'])->name('actividad');
 Route::get('/actividad/guardar', [EducationalController::class, 'guardarResultado'])->name('actividad.guardar');
 Route::get('/resultados', [EducationalController::class, 'resultados'])->name('resultados');
+Route::get('/practica', [EducationalController::class, 'practica'])->name('practica');
