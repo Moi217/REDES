@@ -198,6 +198,7 @@
         if (preguntaActual === totalPreguntas - 1) {
             document.getElementById('btn-siguiente').classList.add('hidden');
             document.getElementById('btn-enviar').classList.remove('hidden');
+            document.getElementById('btn-enviar').textContent = '¡Listo!';
         } else {
             document.getElementById('btn-siguiente').classList.remove('hidden');
             document.getElementById('btn-enviar').classList.add('hidden');

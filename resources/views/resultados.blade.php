@@ -65,8 +65,17 @@
         </div>
     </div>
 
-    <!-- Revisión de respuestas -->
+    <!-- Botón para ver revisión -->
     @if(isset($respuestas) && !empty($respuestas))
+    <div class="text-center mb-8">
+        <button type="button" onclick="document.getElementById('revision-section').classList.toggle('hidden')" 
+            class="btn-primary bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-3 rounded-xl font-bold hover:from-orange-600 hover:to-red-600 shadow-lg">
+            <i class="fas fa-eye mr-2"></i>Ver Respuestas Incorrectas
+        </button>
+    </div>
+
+    <!-- Revisión de respuestas -->
+    <div id="revision-section" class="hidden">
     @php
         $respuestasArray = json_decode($respuestas, true);
         $preguntas = [
