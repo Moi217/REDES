@@ -27,7 +27,7 @@
                     <i class="fas fa-pencil-alt mr-2"></i>Tomar Quiz
                 </a>
             </div>
-        </div>
+</div>
     </div>
 
     <!-- Video Introductorio -->
